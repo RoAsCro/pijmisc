@@ -1,0 +1,31 @@
+public class ArrayStack<T> implements Stack<T> {
+private T[] contents;
+private int headIndex;
+
+public static void main(String[] args) {
+	Stack<Integer> myNumberStack = new ArrayStack<Integer>();
+	myNumberStack.run;
+	Stack<String> myStringStack = new ArrayStack<String>();
+}
+
+public void run(){
+
+push(1);
+//myStringStack.push("Test string!");
+}
+
+public void push(T newElement) {
+contents[headIndex] = newElement;
+headIndex++;
+}
+public T pop() {
+if (headIndex == 0) {
+return null;
+}
+headIndex--;
+T result = contents[headIndex];
+contents[headIndex] = null;
+return result;
+}
+// ... constructor and other methods would be here ...
+}
